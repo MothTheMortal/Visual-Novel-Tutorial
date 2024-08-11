@@ -31,8 +31,21 @@ namespace TESTING
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (architect.isBuilding)
+                {
+                    if (!architect.hurryUp)
+                        architect.hurryUp = true;
+                    else
+                        architect.ForceComplete();
+                }
+                
                 architect.Build(lines[Random.Range(0, lines.Length)]);
-            
+            }
+            else if (Input.GetKeyDown(KeyCode.A))
+            {
+                architect.Append(lines[Random.Range(0, lines.Length)]);
+            }
         }
     }
 }
