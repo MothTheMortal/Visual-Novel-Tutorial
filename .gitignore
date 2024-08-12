@@ -11,11 +11,11 @@
 /[Uu]ser[Ss]ettings/
 
 # Decluttering
-ProjectSettings
+/ProjectSettings
 .idea
-Assets/TextMesh Pro
-Assets/TutorialInfo
-Assets/Settings
+/Assets/TextMesh Pro
+/Assets/TutorialInfo
+/Assets/Settings
 *.meta
 *.asset
 
