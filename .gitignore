@@ -10,7 +10,16 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+# Decluttering
+ProjectSettings
 .idea
+Assets/TextMesh Pro
+Assets/TutorialInfo
+Assets/Settings
+*.meta
+*.asset
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

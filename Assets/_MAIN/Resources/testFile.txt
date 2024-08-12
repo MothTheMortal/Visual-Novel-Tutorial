@@ -1,0 +1,9 @@
+﻿Alice: Hey Bob, have you seen the new exhibit at the museum?
+
+Bob: Not yet, Alice. Is it worth checking out?
+
+Alice: Absolutely! It's all about the history of AI. You'd love it!
+
+Bob: Sounds fascinating! Let's go this weekend.
+
+Alice: Great idea! I'll book the tickets.
