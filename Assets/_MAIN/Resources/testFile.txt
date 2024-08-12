@@ -1,9 +1,7 @@
-﻿Alice: Hey Bob, have you seen the new exhibit at the museum?
+﻿John "Hello World!" list(items -f long), playSong("Intro Song" -v 1)
 
-Bob: Not yet, Alice. Is it worth checking out?
+setScene("Classroom" -s 5.5)
 
-Alice: Absolutely! It's all about the history of AI. You'd love it!
+World "Hello, \"Quote Here\" right back at you!"
 
-Bob: Sounds fascinating! Let's go this weekend.
-
-Alice: Great idea! I'll book the tickets.
+narrator "And so ended the traditional 'Hello World' conversation." PlaySong(End, -p 0.5), list(players), saveGame(1 -g all -f simple)
