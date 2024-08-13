@@ -1,13 +1,11 @@
 ﻿using DIALOGUE;
 using System.Collections.Generic;
-using UnityEngine
+using UnityEngine;
 
 namespace TESTING
 {
-    public class TestDialogueFiles
+    public class TestDialogueFiles : MonoBehaviour
     {
-        [SerializeField] private TextAsset file;
-        
         // Start is called before the first frame update
         void Start()
         {
