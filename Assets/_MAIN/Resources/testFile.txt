@@ -1,19 +1,14 @@
-﻿Alice "Good morning, everyone! I hope you're all prepared for an exhilarating and intellectually stimulating day ahead of us, filled with groundbreaking discoveries, thought-provoking discussions, and unforgettable moments that will shape our academic journey for years to come." list(students -f comprehensive), playSong("Morning Symphony" -v 0.9)
+﻿Detective: "This changes everything.{a} We're dealing with a whole new level of evil here."
 
-setScene("Grand University Auditorium" -s 4.5)
+Partner: "I know.{c} It's hard to believe that someone could do something...{wa 1} like this."
 
-Bob "Oh, hello Alice! I must say, I'm absolutely thrilled and fully prepared for the day's events, especially considering the monumental importance of our upcoming presentation, which has been the focal point of our collective efforts for the past several weeks; by the way, I'm curious to know if you've managed to put the finishing touches on your part of the presentation?"
+Detective: "We need to find this killer and put a stop to his experiments.{c} But how do we even begin to track him down?"
 
-Alice "Without a shadow of a doubt, I can confidently assure you that I've been meticulously working on my portion of the presentation with unwavering dedication, burning the midnight oil for the entirety of the past week to ensure that every detail is polished to perfection; I'm eager to hear about your progress as well, and speaking of which, Carol, I'd love to know how you're feeling about today's big event?"
+Partner: "Maybe we can start by looking at the victims.{wa 0.5} See if there's any connection between them."
 
-Carol "To be perfectly honest, I've reached a state of preparedness that I believe is the pinnacle of my capabilities, though I must admit there's always room for improvement; on an entirely different note, I'm wondering if you've caught wind of the exciting news circulating about the highly anticipated \"Guest Speaker\" who's scheduled to grace us with their presence and wisdom today?"
+Detective: "Good idea.{wc 1} But we need to be careful.{a} If this guy is experimenting with the supernatural,{wa 1} who knows what kind of powers he might have."
 
-setScene("Expansive University Hallway" -s 3.5)
+Partner: "I'll see if I can dig up any information on local occult groups.{a} Maybe someone's heard something."
 
-David "I must confess that this is the first I'm hearing about a guest speaker, and I'm absolutely intrigued by this unexpected development; would you be so kind as to enlighten us with any additional information you might have regarding the identity of this mysterious and potentially illustrious individual?"
+Detective: "Alright.{a} In the meantime, I'll try to gather as much evidence as possible.{c} We'll catch this guy, no matter what it takes."
 
-Carol "Well, you'll be ecstatic to learn that, according to the whispers and rumors I've been privy to, our esteemed guest is none other than the world-renowned physicist, Dr. Johnson, whose groundbreaking work in the field has revolutionized our understanding of the universe and its fundamental principles!"
-
-Alice "My goodness, that's absolutely mind-blowing news that has sent my excitement levels through the roof; I firmly believe that we should make it our top priority to attend his lecture, as it's bound to be an once-in-a-lifetime opportunity to gain insights from one of the greatest scientific minds of our generation."
-
-Bob "I couldn't agree more with your sentiment, Alice, and I propose that we make our way to the lecture hall this very instant to"

@@ -56,8 +56,6 @@ namespace DIALOGUE
                 
                 
             }
-            // Identify Command Pattern
-            
             
             
             // Debug.Log();

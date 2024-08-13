@@ -77,10 +77,9 @@ namespace DIALOGUE
         {
             if (line.hasSpeaker)
                 dialogueSystem.ShowSpeakerName(line.speaker);
-            else
-                dialogueSystem.HideSpeakerName();
 
-            yield return BuildDialogue(line.dialogue);
+
+            yield return BuildLineSegments(line.dialogue);
 
             yield return WaitForUserInput();
 
@@ -92,10 +91,44 @@ namespace DIALOGUE
             yield return null;
         }
 
-        IEnumerator BuildDialogue(string dialogue)
+        IEnumerator BuildLineSegments(DL_DIALOGUE_DATA line)
         {
-            architect.Build(dialogue);
+            for (int i = 0; i < line.segments.Count; i++)
+            {
+                DL_DIALOGUE_DATA.DIALOGUE_SEGMENT segment = line.segments[i];
 
+                yield return WaitForDialougeSegmentSignalToBeTriggered(segment);
+
+                yield return BuildDialogue(segment.dialogue, segment.appendText);
+            }
+        }
+
+        IEnumerator WaitForDialougeSegmentSignalToBeTriggered(DL_DIALOGUE_DATA.DIALOGUE_SEGMENT segment)
+        {
+            switch(segment.startSignal)
+            {
+                case DL_DIALOGUE_DATA.DIALOGUE_SEGMENT.StartSignal.C:
+                case DL_DIALOGUE_DATA.DIALOGUE_SEGMENT.StartSignal.A:
+                    yield return WaitForUserInput();
+                    break;
+                case DL_DIALOGUE_DATA.DIALOGUE_SEGMENT.StartSignal.WC:
+                case DL_DIALOGUE_DATA.DIALOGUE_SEGMENT.StartSignal.WA:
+                    yield return new WaitForSeconds(segment.signalDelay);
+                    break;
+                default:
+                    break;
+                    
+            }
+        }
+        
+        
+        IEnumerator BuildDialogue(string dialogue, bool append = false)
+        {
+            if (!append)
+                architect.Build(dialogue);
+            else
+                architect.Append(dialogue);
+            
             while (architect.isBuilding)
             {
                 if (userPrompt)
